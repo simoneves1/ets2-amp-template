@@ -13,8 +13,8 @@ Meta.ConfigRoot=american-truck-simulator.kvp
 Meta.MinAMPVersion=2.4.3.0
 Meta.SpecificDockerImage=cubecoders/ampbase:debian
 Meta.DockerRequired=False
-Meta.ContainerPolicy=SupportedOnLinux,RequiredOnWindows
-Meta.ContainerPolicyReason=The game server does not run properly as NETWORK SERVICE, so it must be run within Docker on Windows.
+Meta.ContainerPolicy=SupportedOnLinux
+Meta.ContainerPolicyReason=
 Meta.ExtraSetupStepsURI=https://discourse.cubecoders.com/docs?topic=3790?utm_source=ampcreate&utm_content=ats-ets2
 Meta.Prerequisites=[]
 Meta.ExtraContainerPackages=[]
