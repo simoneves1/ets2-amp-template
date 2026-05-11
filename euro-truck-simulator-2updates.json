@@ -5,6 +5,22 @@
         "UpdateSource": "SteamCMD",
         "UpdateSourceData": "1948160",
         "UpdateSourceArgs": "227300",
+        "UpdateSourceTarget": "{{$FullBaseDir}}",
+        "UpdateSourceVersion": "public",
+        "UpdateSourceConditionSetting": "InstallBeta",
+        "UpdateSourceConditionValue": "false",
+        "SkipOnFailure": false
+    },
+    {
+        "UpdateStageName": "SteamCMD Download (Beta)",
+        "UpdateSourcePlatform": "All",
+        "UpdateSource": "SteamCMD",
+        "UpdateSourceData": "1948160",
+        "UpdateSourceArgs": "227300",
+        "UpdateSourceTarget": "{{$FullBaseDir}}",
+        "UpdateSourceVersion": "{{BetaBranch}}",
+        "UpdateSourceConditionSetting": "InstallBeta",
+        "UpdateSourceConditionValue": "true",
         "SkipOnFailure": false
     },
     {
@@ -25,3 +41,4 @@
         "SkipOnFailure": false
     }
 ]
+

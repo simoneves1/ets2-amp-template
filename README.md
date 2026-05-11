@@ -113,8 +113,7 @@ Then in AMP, create a Generic Module instance and point it to the `.kvp` file.
 
 - The server requires a valid **Steam Game Server Login Token** to show in the
   server browser. Without it, the server runs but is unlisted.
-- On **Windows**, AMP requires Docker for this server (the server does not work
-  as NETWORK SERVICE). On **Linux**, it runs natively.
+- On **Windows**, AMP can run this server natively. Docker is optional but supported.
 - The actual server config is written to:
   `Euro Truck Simulator 2/server_config.sii` inside the instance directory.
   AMP manages this automatically — do not edit it manually.

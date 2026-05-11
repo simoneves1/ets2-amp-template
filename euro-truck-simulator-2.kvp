@@ -31,7 +31,7 @@ App.ExecutableLinux=1948160/bin/linux_x64/eurotrucks2_server
 App.WorkingDir=1948160
 App.LinuxCommandLineArgs=-nosingle
 App.WindowsCommandLineArgs=-nosingle
-App.CommandLineArgs={{$PlatformArgs}} {{$FormattedArgs}} -homedir {{$FullBaseDir}}
+App.CommandLineArgs={{$PlatformArgs}} {{$FormattedArgs}} -homedir "{{$FullBaseDir}}"
 App.UseLinuxIOREDIR=False
 App.AppSettings={}
 App.EnvironmentVariables={"LD_LIBRARY_PATH":"{{$FullBaseDir}}linux64:{{$FullRootDir}}linux64:%LD_LIBRARY_PATH%","SteamAppId":"227300","XDG_DATA_HOME":"{{$FullBaseDir}}"}
@@ -75,12 +75,12 @@ App.MonitorChildProcessWaitMs=1000
 App.MonitorChildProcessName=
 App.SupportsUniversalSleep=False
 App.WakeupMode=Any
-App.ApplicationReadyMode=Immediate
+App.ApplicationReadyMode=OutputMatch
 
 Console.FilterMatchRegex=
 Console.FilterMatchReplacement=
 Console.ThrowawayMessageRegex=(WARNING|ERROR): Shader.+
-Console.AppReadyRegex=^$
+Console.AppReadyRegex=^\[MP\] Session running\.$
 Console.UserJoinRegex=^\[MP\] (?<username>.+?) connected, client_id = (?<sessionid>\d+).*$
 Console.UserLeaveRegex=^\[MP\] (?<username>.+?) disconnected, client_id = (?<sessionid>\d+).*$
 Console.UserChatRegex=^$
@@ -90,7 +90,7 @@ Console.SuppressLogAtStart=False
 Console.ActivateLogRegex=
 Console.UserActions={}
 
-Limits.SleepMode=True
+Limits.SleepMode=False
 Limits.SleepOnStart=False
 Limits.SleepDelayMinutes=5
 Limits.DozeDelay=2

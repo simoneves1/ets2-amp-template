@@ -76,12 +76,12 @@ App.MonitorChildProcessWaitMs=1000
 App.MonitorChildProcessName=
 App.SupportsUniversalSleep=False
 App.WakeupMode=Any
-App.ApplicationReadyMode=Immediate
+App.ApplicationReadyMode=OutputMatch
 
 Console.FilterMatchRegex=
 Console.FilterMatchReplacement=
 Console.ThrowawayMessageRegex=(WARNING|ERROR): Shader.+
-Console.AppReadyRegex=^$
+Console.AppReadyRegex=^\[MP\] Session running\.$
 Console.UserJoinRegex=^\[MP\] (?<username>.+?) connected, client_id = (?<sessionid>\d+).*$
 Console.UserLeaveRegex=^\[MP\] (?<username>.+?) disconnected, client_id = (?<sessionid>\d+).*$
 Console.UserChatRegex=^$
@@ -91,7 +91,7 @@ Console.SuppressLogAtStart=False
 Console.ActivateLogRegex=
 Console.UserActions={}
 
-Limits.SleepMode=True
+Limits.SleepMode=False
 Limits.SleepOnStart=False
 Limits.SleepDelayMinutes=5
 Limits.DozeDelay=2
