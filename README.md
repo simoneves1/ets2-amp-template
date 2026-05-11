@@ -1,5 +1,9 @@
 # Euro Truck Simulator 2 - Custom AMP Template
 
+> **Status:**
+> - **Euro Truck Simulator 2** — Work in progress. Expect issues and incomplete features.
+> - **American Truck Simulator** — Not yet tested. Use at your own risk.
+
 A custom AMP (Application Management Panel) Generic Module template for running
 a Euro Truck Simulator 2 dedicated convoy server.
 
