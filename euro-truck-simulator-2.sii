@@ -24,8 +24,8 @@ server_config : _nameless.3a6.40c0 {
  service_no_collision: {{service_no_collision}}
  in_menu_ghosting: {{in_menu_ghosting}}
  name_tags: {{name_tags}}
- friends_only: false
- show_server: true
+ friends_only: {{friends_only}}
+ show_server: {{show_server}}
  moderator_list: {{moderator_list1}}
  {{moderator_list2}}
 }

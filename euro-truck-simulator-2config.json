@@ -161,6 +161,40 @@
         "EnumValues": {}
     },
     {
+        "DisplayName": "Friends Only",
+        "Category": "Euro Truck Simulator 2:stadia_controller",
+        "Subcategory": "Server:dns:1",
+        "Description": "Restrict the session to Steam friends only.",
+        "Keywords": "friends,only",
+        "FieldName": "friends_only",
+        "InputType": "checkbox",
+        "IsFlagArgument": false,
+        "ParamFieldName": "friends_only",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "false",
+        "EnumValues": {
+            "False": "false",
+            "True": "true"
+        }
+    },
+    {
+        "DisplayName": "Show Server",
+        "Category": "Euro Truck Simulator 2:stadia_controller",
+        "Subcategory": "Server:dns:1",
+        "Description": "List the server publicly in the server browser. Disable to make the server unlisted (invite/direct-connect only).",
+        "Keywords": "show,server,listed,public",
+        "FieldName": "show_server",
+        "InputType": "checkbox",
+        "IsFlagArgument": false,
+        "ParamFieldName": "show_server",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "true",
+        "EnumValues": {
+            "False": "false",
+            "True": "true"
+        }
+    },
+    {
         "DisplayName": "Player Damage",
         "Category": "Euro Truck Simulator 2:stadia_controller",
         "Subcategory": "Gameplay:tune:2",

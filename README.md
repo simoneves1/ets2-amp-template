@@ -76,15 +76,27 @@ Then in AMP, create a Generic Module instance and point it to the `.kvp` file.
 1. **Create the AMP instance** using the template.
 2. **Run the update** (click Update in AMP) — this downloads the ETS2 dedicated
    server via SteamCMD (~2 GB).
-3. **Configure your server** in AMP's settings panel:
+3. **Generate server packages** *(required — server will not start without this)*
+   - Launch **Euro Truck Simulator 2** on your own PC (the regular game client).
+   - Open the in-game developer console (press `~` or `` ` ``).
+   - Run the command: `export_server_packages`
+   - This creates two files in your local ETS2 documents folder
+     (`Documents\Euro Truck Simulator 2\`):
+     - `server_packages.sii`
+     - `server_packages.dat`
+   - Copy **both files** into the server's home directory inside the AMP instance:
+     `<AMP datastore>\<instance>\euro-truck-simulator-2\1948160\Euro Truck Simulator 2\`
+   - These files tell the server which map, DLCs, and mods to use. If you add or
+     remove DLCs/mods later, you must repeat this step.
+4. **Configure your server** in AMP's settings panel:
    - Set your **Lobby Name**, **Description**, **Welcome Message**
    - Set a **Password** (optional, leave blank for public)
    - Paste your **Server Logon Token**
    - Adjust gameplay options as desired
-4. **Forward ports** in your router/firewall:
+5. **Forward ports** in your router/firewall:
    - **UDP 27015** — Main game port
    - **UDP 27016** — Steam query port
-5. **Start the instance** — click Start in AMP.
+6. **Start the instance** — click Start in AMP.
 
 ---
 
